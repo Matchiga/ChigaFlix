@@ -1,0 +1,17 @@
+C:\Users\Matheus\source\repos\AluraFlix\AluraFlix.Shared.Dados\bin\Debug\net8.0\AluraFlix.Shared.Dados.deps.json
+C:\Users\Matheus\source\repos\AluraFlix\AluraFlix.Shared.Dados\bin\Debug\net8.0\AluraFlix.Shared.Dados.runtimeconfig.json
+C:\Users\Matheus\source\repos\AluraFlix\AluraFlix.Shared.Dados\bin\Debug\net8.0\AluraFlix.Shared.Dados.dll
+C:\Users\Matheus\source\repos\AluraFlix\AluraFlix.Shared.Dados\bin\Debug\net8.0\AluraFlix.Shared.Dados.pdb
+C:\Users\Matheus\source\repos\AluraFlix\AluraFlix.Shared.Dados\bin\Debug\net8.0\AluraFlix.Shared.Modelos.dll
+C:\Users\Matheus\source\repos\AluraFlix\AluraFlix.Shared.Dados\bin\Debug\net8.0\AluraFlix.Shared.Modelos.pdb
+C:\Users\Matheus\source\repos\AluraFlix\AluraFlix.Shared.Dados\obj\Debug\net8.0\AluraFlix.Shared.Dados.csproj.AssemblyReference.cache
+C:\Users\Matheus\source\repos\AluraFlix\AluraFlix.Shared.Dados\obj\Debug\net8.0\AluraFlix.Shared.Dados.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Matheus\source\repos\AluraFlix\AluraFlix.Shared.Dados\obj\Debug\net8.0\AluraFlix.Shared.Dados.AssemblyInfoInputs.cache
+C:\Users\Matheus\source\repos\AluraFlix\AluraFlix.Shared.Dados\obj\Debug\net8.0\AluraFlix.Shared.Dados.AssemblyInfo.cs
+C:\Users\Matheus\source\repos\AluraFlix\AluraFlix.Shared.Dados\obj\Debug\net8.0\AluraFlix.Shared.Dados.csproj.CoreCompileInputs.cache
+C:\Users\Matheus\source\repos\AluraFlix\AluraFlix.Shared.Dados\obj\Debug\net8.0\AluraFli.C1E6C722.Up2Date
+C:\Users\Matheus\source\repos\AluraFlix\AluraFlix.Shared.Dados\obj\Debug\net8.0\AluraFlix.Shared.Dados.dll
+C:\Users\Matheus\source\repos\AluraFlix\AluraFlix.Shared.Dados\obj\Debug\net8.0\refint\AluraFlix.Shared.Dados.dll
+C:\Users\Matheus\source\repos\AluraFlix\AluraFlix.Shared.Dados\obj\Debug\net8.0\AluraFlix.Shared.Dados.pdb
+C:\Users\Matheus\source\repos\AluraFlix\AluraFlix.Shared.Dados\obj\Debug\net8.0\AluraFlix.Shared.Dados.genruntimeconfig.cache
+C:\Users\Matheus\source\repos\AluraFlix\AluraFlix.Shared.Dados\obj\Debug\net8.0\ref\AluraFlix.Shared.Dados.dll

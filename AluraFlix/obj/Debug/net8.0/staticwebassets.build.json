@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "ry2P1Q21JNiifLFm7D3QCjVf6IkXSv/+VR/iCLteL3k=",
+  "Source": "AluraFlix.API",
+  "BasePath": "_content/AluraFlix.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
