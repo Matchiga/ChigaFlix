@@ -27,7 +27,6 @@ API RESTful desenvolvida em C# para uma plataforma de compartilhamento de vídeo
 
 1. **Pré-requisitos:**
     - Ter o .NET SDK 8.0 instalado.
-    - Ter o  (especificar dependências como o banco de dados) instalado e configurado.
 2. **Clonar o Repositório:**
    ```bash
    git clone https://github.com/Matchiga/AluraFlix.git
