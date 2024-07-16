@@ -1,4 +1,4 @@
-## VideoShare API  
+## AluraFlix API  
 
 API RESTful desenvolvida em C# para uma plataforma de compartilhamento de vídeos, permitindo aos usuários criar e gerenciar seus vídeos favoritos.
 
