@@ -1,6 +1,6 @@
 ## VideoShare API  
 
-[![.NET](https://github.com/Matchiga/VideoShare-API/actions/workflows/dotnet.yml/badge.svg)](https://github.com/Matchiga/VideoShare-API/actions/workflows/dotnet.yml)
+[![.NET](https://github.com/Matchiga/AluraFlix/actions/workflows/dotnet.yml/badge.svg)](https://github.com/Matchiga/AluraFlix/actions/workflows/dotnet.yml)
 
 API RESTful desenvolvida em C# para uma plataforma de compartilhamento de vídeos, permitindo aos usuários criar e gerenciar seus vídeos favoritos.
 
