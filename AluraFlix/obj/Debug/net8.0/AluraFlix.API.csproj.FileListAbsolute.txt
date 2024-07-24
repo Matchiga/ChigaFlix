@@ -143,3 +143,15 @@ C:\Users\Matheus\source\repos\AluraFlix\AluraFlix\obj\Debug\net8.0\refint\AluraF
 C:\Users\Matheus\source\repos\AluraFlix\AluraFlix\obj\Debug\net8.0\AluraFlix.API.pdb
 C:\Users\Matheus\source\repos\AluraFlix\AluraFlix\obj\Debug\net8.0\AluraFlix.API.genruntimeconfig.cache
 C:\Users\Matheus\source\repos\AluraFlix\AluraFlix\obj\Debug\net8.0\ref\AluraFlix.API.dll
+C:\Users\Matheus\source\repos\AluraFlix\AluraFlix\obj\Debug\net8.0\AluraFlix.API.sourcelink.json
+C:\Users\Matheus\source\repos\AluraFlix\AluraFlix\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\Matheus\source\repos\AluraFlix\AluraFlix\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\Matheus\source\repos\AluraFlix\AluraFlix\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\Matheus\source\repos\AluraFlix\AluraFlix\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\Matheus\source\repos\AluraFlix\AluraFlix\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\Matheus\source\repos\AluraFlix\AluraFlix\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Users\Matheus\source\repos\AluraFlix\AluraFlix\bin\Debug\net8.0\Microsoft.AspNetCore.Authorization.dll
+C:\Users\Matheus\source\repos\AluraFlix\AluraFlix\bin\Debug\net8.0\Microsoft.AspNetCore.Metadata.dll
+C:\Users\Matheus\source\repos\AluraFlix\AluraFlix\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Matheus\source\repos\AluraFlix\AluraFlix\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Matheus\source\repos\AluraFlix\AluraFlix\bin\Debug\net8.0\System.Security.Permissions.dll

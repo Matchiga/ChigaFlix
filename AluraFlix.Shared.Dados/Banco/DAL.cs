@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using AluraFlix.Modelos;
+using Microsoft.EntityFrameworkCore;
 
 namespace AluraFlix.Shared.Dados.Banco;
 
@@ -35,5 +32,13 @@ public class DAL<T> where T : class
     public T? RecuperarPor(Func <T, bool> condicao)
     {
         return context.Set<T>().FirstOrDefault(condicao);
+    }
+
+    public async Task<IEnumerable<Videos>?> RecuperarVideosPorCategoriaAsync(string categoriaTitulo)
+    {
+        return await context.Videos
+            .Include(v => v.Categorias) // Carrega a categoria relacionada
+            .Where(v => v.Categorias != null && v.Categorias.Titulo.ToUpper() == categoriaTitulo.ToUpper())
+            .ToListAsync();
     }
 }

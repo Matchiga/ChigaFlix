@@ -9,3 +9,4 @@ C:\Users\Matheus\source\repos\AluraFlix\AluraFlix.Shared.Modelos\obj\Debug\net8.
 C:\Users\Matheus\source\repos\AluraFlix\AluraFlix.Shared.Modelos\obj\Debug\net8.0\refint\AluraFlix.Shared.Modelos.dll
 C:\Users\Matheus\source\repos\AluraFlix\AluraFlix.Shared.Modelos\obj\Debug\net8.0\AluraFlix.Shared.Modelos.pdb
 C:\Users\Matheus\source\repos\AluraFlix\AluraFlix.Shared.Modelos\obj\Debug\net8.0\ref\AluraFlix.Shared.Modelos.dll
+C:\Users\Matheus\source\repos\AluraFlix\AluraFlix.Shared.Modelos\obj\Debug\net8.0\AluraFlix.Shared.Modelos.sourcelink.json

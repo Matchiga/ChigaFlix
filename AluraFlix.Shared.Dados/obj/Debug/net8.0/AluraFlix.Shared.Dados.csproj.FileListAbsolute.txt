@@ -15,3 +15,4 @@ C:\Users\Matheus\source\repos\AluraFlix\AluraFlix.Shared.Dados\obj\Debug\net8.0\
 C:\Users\Matheus\source\repos\AluraFlix\AluraFlix.Shared.Dados\obj\Debug\net8.0\AluraFlix.Shared.Dados.pdb
 C:\Users\Matheus\source\repos\AluraFlix\AluraFlix.Shared.Dados\obj\Debug\net8.0\AluraFlix.Shared.Dados.genruntimeconfig.cache
 C:\Users\Matheus\source\repos\AluraFlix\AluraFlix.Shared.Dados\obj\Debug\net8.0\ref\AluraFlix.Shared.Dados.dll
+C:\Users\Matheus\source\repos\AluraFlix\AluraFlix.Shared.Dados\obj\Debug\net8.0\AluraFlix.Shared.Dados.sourcelink.json
