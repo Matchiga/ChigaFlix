@@ -21,8 +21,8 @@
 	</ItemGroup>
 	
 	<ItemGroup>
-		<ProjectReference Include="..\AluraFlix.Shared.Modelos\AluraFlix.Shared.Modelos.csproj" />
-		<ProjectReference Include="..\AluraFlix.Shared.Dados\AluraFlix.Shared.Dados.csproj" />
+		<ProjectReference Include="..\AluraFlix.Shared.Modelos\ChigaFlix.Shared.Modelos.csproj" />
+		<ProjectReference Include="..\AluraFlix.Shared.Dados\ChigaFlix.Shared.Data.csproj" />
 	</ItemGroup>
 
 </Project>

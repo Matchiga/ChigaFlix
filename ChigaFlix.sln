@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.34928.147
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AluraFlix.API", "AluraFlix\AluraFlix.API.csproj", "{53F965A8-CB7A-42E6-AB83-F0F31E7ADBBC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChigaFlix.API", "AluraFlix\ChigaFlix.API.csproj", "{53F965A8-CB7A-42E6-AB83-F0F31E7ADBBC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AluraFlix.Shared.Dados", "AluraFlix.Shared.Dados\AluraFlix.Shared.Dados.csproj", "{2BFAA0BE-A766-4A24-A5AD-4C80E4CB08C2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChigaFlix.Shared.Data", "AluraFlix.Shared.Dados\ChigaFlix.Shared.Data.csproj", "{2BFAA0BE-A766-4A24-A5AD-4C80E4CB08C2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AluraFlix.Shared.Modelos", "AluraFlix.Shared.Modelos\AluraFlix.Shared.Modelos.csproj", "{E86125D7-8827-4FFC-B97B-59393CED197E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChigaFlix.Shared.Modelos", "AluraFlix.Shared.Modelos\ChigaFlix.Shared.Modelos.csproj", "{E86125D7-8827-4FFC-B97B-59393CED197E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

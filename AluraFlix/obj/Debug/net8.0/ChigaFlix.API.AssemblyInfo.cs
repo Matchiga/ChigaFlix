@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ChigaFlix.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+65813186828fcdec015b95ebed7d9ef10436bbcb")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d16be65af41e4e683e45f54bde7fc6cc4ba101c7")]
 [assembly: System.Reflection.AssemblyProductAttribute("ChigaFlix.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ChigaFlix.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
