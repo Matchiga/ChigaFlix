@@ -1,19 +1,19 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using AluraFlix.Modelos;
-using AluraFlix.Shared.Dados.Modelos;
+using ChigaFlix.Models;
+using ChigaFlix.Shared.Data.Models;
 using Microsoft.AspNetCore.Identity;
 
-namespace AluraFlix.Shared.Dados.Banco;
+namespace ChigaFlix.Shared.Data.Bank;
 
-public class AluraFlixContext : IdentityDbContext<PessoaComAcesso, PerfilDeAcesso, int>
+public class ChigaFlixContext : IdentityDbContext<PersonWithAccess, AccessProfile, int>
 {
     public DbSet<Videos> Videos { get; set; }
-    public DbSet<Categorias> Categorias { get; set; }
+    public DbSet<Categories> Categories { get; set; }
 
     private string connectionString = "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=AluraFlix;Integrated Security=True;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False";
 
-    public AluraFlixContext(DbContextOptions<AluraFlixContext> options) : base(options)
+    public ChigaFlixContext(DbContextOptions<ChigaFlixContext> options) : base(options)
     {
     }
 
@@ -26,9 +26,9 @@ public class AluraFlixContext : IdentityDbContext<PessoaComAcesso, PerfilDeAcess
     {
         base.OnModelCreating(modelBuilder);
         modelBuilder.Entity<Videos>()
-            .HasOne(v => v.Categorias) 
+            .HasOne(v => v.Categories) 
             .WithMany(c => c.Videos) 
-            .HasForeignKey(v => v.CategoriasId);
+            .HasForeignKey(v => v.CategoriesId);
 
         modelBuilder.Entity<IdentityUserLogin<int>>()
                     .HasKey(login => new { login.LoginProvider, login.ProviderKey });

@@ -1,6 +1,6 @@
-﻿using AluraFlix.API.Requests;
-using AluraFlix.Modelos;
+﻿using ChigaFlix.API.Requests;
+using ChigaFlix.Models;
 
-namespace AluraFlix.API.Requests;
-public record VideosRequestEdit(string Titulo, string Url, string? Descricao, int Id, int CategoriasId)
-: VideosRequest(Titulo, Url, Descricao, Id, CategoriasId);
+namespace ChigaFlix.API.Requests;
+public record VideosRequestEdit(string Title, string Url, string? Description, int Id, int CategoriesId)
+: VideosRequest(Title, Url, Description, Id, CategoriesId);

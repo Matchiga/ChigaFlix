@@ -1,10 +1,10 @@
-﻿using AluraFlix.Shared.Dados.Banco;
-using AluraFlix.API.Requests;
-using AluraFlix.API.Responses;
-using AluraFlix.Modelos;
+﻿using ChigaFlix.Shared.Data.Bank;
+using ChigaFlix.API.Requests;
+using ChigaFlix.API.Responses;
+using ChigaFlix.Models;
 using Microsoft.AspNetCore.Mvc;
 
-namespace AluraFlix.API.Endpoints;
+namespace ChigaFlix.API.Endpoints;
 
 public static class VideosExtensions
 {
@@ -14,18 +14,18 @@ public static class VideosExtensions
 
         groupBuilder.MapGet("", ([FromServices] DAL<Videos> dal, int skip = 0, int take = 5) =>
         {
-            var listaDeVideos = dal.Listar().Skip(skip).Take(take);
-            if (listaDeVideos is null)
+            var videoList = dal.List().Skip(skip).Take(take);
+            if (videoList is null)
             {
                 return Results.NotFound();
             }
-            var listaDeVideosResponse = EntityListToResponseList(listaDeVideos);
-            return Results.Ok(listaDeVideosResponse);
+            var listOfVideosResponse = EntityListToResponseList(videoList);
+            return Results.Ok(listOfVideosResponse);
         });
 
         groupBuilder.MapGet("{id}", ([FromServices] DAL<Videos> dal, int id) =>
         {
-            var videos = dal.RecuperarPor(a => a.Id == id);
+            var videos = dal.RecoverBy(a => a.Id == id);
             if (videos is null)
             {
                 return Results.NotFound();
@@ -34,9 +34,9 @@ public static class VideosExtensions
 
         });
 
-        groupBuilder.MapGet("{titulo}", ([FromServices] DAL<Videos> dal, string titulo) =>
+        groupBuilder.MapGet("{title}", ([FromServices] DAL<Videos> dal, string title) =>
         {
-            var videos = dal.RecuperarPor(a => a.Titulo.ToUpper().Equals(titulo.ToUpper()));
+            var videos = dal.RecoverBy(a => a.Title.ToUpper().Equals(title.ToUpper()));
             if (videos is null)
             {
                 return Results.NotFound();
@@ -46,46 +46,46 @@ public static class VideosExtensions
 
         groupBuilder.MapPost("", ([FromServices] DAL<Videos> dal, [FromBody] VideosRequest videosRequest) =>
         {
-            var videos = new Videos(videosRequest.Titulo, videosRequest.Descricao, videosRequest.Url);
+            var videos = new Videos(videosRequest.Title, videosRequest.Description, videosRequest.Url);
             
-            if (videosRequest.CategoriasId > 0)
-                videos.CategoriasId = videosRequest.CategoriasId;
+            if (videosRequest.CategoriesId > 0)
+                videos.CategoriesId = videosRequest.CategoriesId;
             else
-                videos.CategoriasId = 1;
+                videos.CategoriesId = 1;
 
-            dal.Adicionar(videos);
+            dal.Add(videos);
             return Results.Ok();
         });
 
         groupBuilder.MapDelete("{id}", ([FromServices] DAL<Videos> dal, int id) => {
-            var videos = dal.RecuperarPor(a => a.Id == id);
+            var videos = dal.RecoverBy(a => a.Id == id);
             if (videos is null)
             {
                 return Results.NotFound();
             }
-            dal.Deletar(videos);
+            dal.Remove(videos);
             return Results.NoContent();
 
         });
 
         groupBuilder.MapPut("", ([FromServices] DAL<Videos> dal, [FromBody] VideosRequestEdit videosRequestEdit) => {
             
-            var videosAtualizar = dal.RecuperarPor(a => a.Id == videosRequestEdit.Id);
-            if (videosAtualizar is null)
+            var videosUpdate = dal.RecoverBy(a => a.Id == videosRequestEdit.Id);
+            if (videosUpdate is null)
             {
                 return Results.NotFound();
             }
-            videosAtualizar.Titulo = videosRequestEdit.Titulo;
-            videosAtualizar.Descricao = videosRequestEdit.Descricao;
-            videosAtualizar.Url = videosRequestEdit.Url;
-            dal.Atualizar(videosAtualizar);
+            videosUpdate.Title = videosRequestEdit.Title;
+            videosUpdate.Description = videosRequestEdit.Description;
+            videosUpdate.Url = videosRequestEdit.Url;
+            dal.Update(videosUpdate);
             return Results.Ok();
 
         });
 
-        groupBuilder.MapGet("{categoriaTitulo}/Videos", async ([FromServices] DAL<Videos> dal, string categoriaTitulo) =>
+        groupBuilder.MapGet("{categoryTitle}/Videos", async ([FromServices] DAL<Videos> dal, string categoryTitle) =>
         {
-            var videos = await dal.RecuperarVideosPorCategoriaAsync(categoriaTitulo);
+            var videos = await dal.RetrieveVideosByCategoryAsync(categoryTitle);
 
             if (videos == null || !videos.Any())
             {
@@ -98,30 +98,30 @@ public static class VideosExtensions
 
         app.MapGet("/videos/free", ([FromServices] DAL<Videos> dal) =>
         {
-            var listaDeVideos = dal.Listar();
+            var videoList = dal.List();
 
-            if (listaDeVideos is null)
+            if (videoList is null)
             {
                 return Results.NotFound();
             }
 
-            int maxVideosGratuitos = 3;
+            int maxFreeVideos = 3;
 
-            var listaDeVideosResponse = EntityListToResponseList(listaDeVideos)
-                .Take(maxVideosGratuitos)
+            var listOfVideosResponse = EntityListToResponseList(videoList)
+                .Take(maxFreeVideos)
                 .ToList();
 
-            return Results.Ok(listaDeVideosResponse);
+            return Results.Ok(listOfVideosResponse);
         });
     }
 
-    private static ICollection<VideosResponse> EntityListToResponseList(IEnumerable<Videos> listaDeVideos)
+    private static ICollection<VideosResponse> EntityListToResponseList(IEnumerable<Videos> videoList)
     {
-        return listaDeVideos.Select(a => EntityToResponse(a)).ToList();
+        return videoList.Select(a => EntityToResponse(a)).ToList();
     }
 
     private static VideosResponse EntityToResponse(Videos videos)
     {
-        return new VideosResponse(videos.Id, videos.Titulo, videos.Url, videos.Descricao, videos.CategoriasId);
+        return new VideosResponse(videos.Id, videos.Title, videos.Url, videos.Description, videos.CategoriesId);
     }
 }

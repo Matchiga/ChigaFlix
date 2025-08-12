@@ -2052,11 +2052,11 @@
           "lib/netcoreapp2.1/_._": {}
         }
       },
-      "AluraFlix.Shared.Dados/1.0.0": {
+      "ChigaFlix.Shared.Data/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "AluraFlix.Shared.Modelos": "1.0.0",
+          "C:\\Users\\Matheus\\source\\repos\\ChigaFlix\\ChigaFlix.Shared.Modelos\\ChigaFlix.Shared.Modelos.csproj": "1.0.0",
           "Microsoft.AspNetCore.Authentication": "2.1.2",
           "Microsoft.AspNetCore.Authorization": "8.0.7",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "8.0.7",
@@ -2065,20 +2065,20 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.7"
         },
         "compile": {
-          "bin/placeholder/AluraFlix.Shared.Dados.dll": {}
+          "bin/placeholder/ChigaFlix.Shared.Data.dll": {}
         },
         "runtime": {
-          "bin/placeholder/AluraFlix.Shared.Dados.dll": {}
+          "bin/placeholder/ChigaFlix.Shared.Data.dll": {}
         }
       },
-      "AluraFlix.Shared.Modelos/1.0.0": {
+      "ChigaFlix.Shared.Modelos/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "compile": {
-          "bin/placeholder/AluraFlix.Shared.Modelos.dll": {}
+          "bin/placeholder/ChigaFlix.Shared.Modelos.dll": {}
         },
         "runtime": {
-          "bin/placeholder/AluraFlix.Shared.Modelos.dll": {}
+          "bin/placeholder/ChigaFlix.Shared.Modelos.dll": {}
         }
       }
     }
@@ -5446,21 +5446,21 @@
         "version.txt"
       ]
     },
-    "AluraFlix.Shared.Dados/1.0.0": {
+    "ChigaFlix.Shared.Data/1.0.0": {
       "type": "project",
-      "path": "../AluraFlix.Shared.Dados/AluraFlix.Shared.Dados.csproj",
-      "msbuildProject": "../AluraFlix.Shared.Dados/AluraFlix.Shared.Dados.csproj"
+      "path": "../AluraFlix.Shared.Dados/ChigaFlix.Shared.Data.csproj",
+      "msbuildProject": "../AluraFlix.Shared.Dados/ChigaFlix.Shared.Data.csproj"
     },
-    "AluraFlix.Shared.Modelos/1.0.0": {
+    "ChigaFlix.Shared.Modelos/1.0.0": {
       "type": "project",
-      "path": "../AluraFlix.Shared.Modelos/AluraFlix.Shared.Modelos.csproj",
-      "msbuildProject": "../AluraFlix.Shared.Modelos/AluraFlix.Shared.Modelos.csproj"
+      "path": "../AluraFlix.Shared.Modelos/ChigaFlix.Shared.Modelos.csproj",
+      "msbuildProject": "../AluraFlix.Shared.Modelos/ChigaFlix.Shared.Modelos.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
-      "AluraFlix.Shared.Dados >= 1.0.0",
-      "AluraFlix.Shared.Modelos >= 1.0.0",
+      "ChigaFlix.Shared.Data >= 1.0.0",
+      "ChigaFlix.Shared.Modelos >= 1.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 8.0.7",
       "Microsoft.EntityFrameworkCore.Tools >= 8.0.7",
       "Swashbuckle.AspNetCore >= 6.6.2",
@@ -5469,19 +5469,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Matheus\\.nuget\\packages\\": {}
+    "C:\\Users\\Matheus\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Matheus\\source\\repos\\AluraFlix\\AluraFlix\\AluraFlix.API.csproj",
-      "projectName": "AluraFlix.API",
-      "projectPath": "C:\\Users\\Matheus\\source\\repos\\AluraFlix\\AluraFlix\\AluraFlix.API.csproj",
+      "projectUniqueName": "C:\\Users\\Matheus\\source\\repos\\ChigaFlix\\AluraFlix\\ChigaFlix.API.csproj",
+      "projectName": "ChigaFlix.API",
+      "projectPath": "C:\\Users\\Matheus\\source\\repos\\ChigaFlix\\AluraFlix\\ChigaFlix.API.csproj",
       "packagesPath": "C:\\Users\\Matheus\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Matheus\\source\\repos\\AluraFlix\\AluraFlix\\obj\\",
+      "outputPath": "C:\\Users\\Matheus\\source\\repos\\ChigaFlix\\AluraFlix\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
         "C:\\Users\\Matheus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5489,18 +5494,17 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\Matheus\\source\\repos\\AluraFlix\\AluraFlix.Shared.Dados\\AluraFlix.Shared.Dados.csproj": {
-              "projectPath": "C:\\Users\\Matheus\\source\\repos\\AluraFlix\\AluraFlix.Shared.Dados\\AluraFlix.Shared.Dados.csproj"
+            "C:\\Users\\Matheus\\source\\repos\\ChigaFlix\\AluraFlix.Shared.Dados\\ChigaFlix.Shared.Data.csproj": {
+              "projectPath": "C:\\Users\\Matheus\\source\\repos\\ChigaFlix\\AluraFlix.Shared.Dados\\ChigaFlix.Shared.Data.csproj"
             },
-            "C:\\Users\\Matheus\\source\\repos\\AluraFlix\\AluraFlix.Shared.Modelos\\AluraFlix.Shared.Modelos.csproj": {
-              "projectPath": "C:\\Users\\Matheus\\source\\repos\\AluraFlix\\AluraFlix.Shared.Modelos\\AluraFlix.Shared.Modelos.csproj"
+            "C:\\Users\\Matheus\\source\\repos\\ChigaFlix\\AluraFlix.Shared.Modelos\\ChigaFlix.Shared.Modelos.csproj": {
+              "projectPath": "C:\\Users\\Matheus\\source\\repos\\ChigaFlix\\AluraFlix.Shared.Modelos\\ChigaFlix.Shared.Modelos.csproj"
             }
           }
         }
@@ -5514,7 +5518,8 @@
         "enableAudit": "true",
         "auditLevel": "low",
         "auditMode": "direct"
-      }
+      },
+      "SdkAnalysisLevel": "9.0.300"
     },
     "frameworks": {
       "net8.0": {
@@ -5564,8 +5569,19 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1104",
+      "level": "Error",
+      "message": "Unable to find project 'C:\\Users\\Matheus\\source\\repos\\ChigaFlix\\ChigaFlix.Shared.Modelos\\ChigaFlix.Shared.Modelos.csproj'. Check that the project reference is valid and that the project file exists.",
+      "libraryId": "C:\\Users\\Matheus\\source\\repos\\ChigaFlix\\ChigaFlix.Shared.Modelos\\ChigaFlix.Shared.Modelos.csproj",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    }
+  ]
 }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "zWPtYGK6rbw=",
-  "success": true,
-  "projectFilePath": "C:\\Users\\Matheus\\source\\repos\\AluraFlix\\AluraFlix\\AluraFlix.API.csproj",
+  "dgSpecHash": "eOZcf1848qo=",
+  "success": false,
+  "projectFilePath": "C:\\Users\\Matheus\\source\\repos\\ChigaFlix\\AluraFlix\\ChigaFlix.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Matheus\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\Matheus\\.nuget\\packages\\azure.identity\\1.11.3\\azure.identity.1.11.3.nupkg.sha512",
@@ -114,5 +114,17 @@
     "C:\\Users\\Matheus\\.nuget\\packages\\system.threading.channels\\6.0.0\\system.threading.channels.6.0.0.nupkg.sha512",
     "C:\\Users\\Matheus\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1104",
+      "level": "Error",
+      "message": "Unable to find project 'C:\\Users\\Matheus\\source\\repos\\ChigaFlix\\ChigaFlix.Shared.Modelos\\ChigaFlix.Shared.Modelos.csproj'. Check that the project reference is valid and that the project file exists.",
+      "projectPath": "C:\\Users\\Matheus\\source\\repos\\ChigaFlix\\AluraFlix\\ChigaFlix.API.csproj",
+      "filePath": "C:\\Users\\Matheus\\source\\repos\\ChigaFlix\\AluraFlix\\ChigaFlix.API.csproj",
+      "libraryId": "C:\\Users\\Matheus\\source\\repos\\ChigaFlix\\ChigaFlix.Shared.Modelos\\ChigaFlix.Shared.Modelos.csproj",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    }
+  ]
 }

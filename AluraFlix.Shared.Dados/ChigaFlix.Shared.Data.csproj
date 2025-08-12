@@ -23,7 +23,7 @@
     </PackageReference>
   </ItemGroup>
 	<ItemGroup>
-		<ProjectReference Include="..\AluraFlix.Shared.Modelos\AluraFlix.Shared.Modelos.csproj" />
+		<ProjectReference Include="..\ChigaFlix.Shared.Modelos\ChigaFlix.Shared.Modelos.csproj" />
 	</ItemGroup>
 
 </Project>

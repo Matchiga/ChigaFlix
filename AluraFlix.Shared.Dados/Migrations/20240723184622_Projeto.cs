@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace AluraFlix.Shared.Dados.Migrations
+namespace ChigaFlix.Shared.Data.Migrations
 {
     /// <inheritdoc />
     public partial class Projeto : Migration
