@@ -1,54 +1,50 @@
-## AluraFlix API  
+RESTful API developed in C# for a video-sharing platform, allowing users to create and manage their favorite videos.
 
-API RESTful desenvolvida em C# para uma plataforma de compartilhamento de vídeos, permitindo aos usuários criar e gerenciar seus vídeos favoritos.
+### Features
 
-### Funcionalidades
+- **Video Management:**
+    - Creation of playlists with video title, URL, and description.
+    - Addition and removal of videos using ID.
+    - Listing of all videos.
+    - Search for a video by ID.
+- **Video Management:**
+    - Addition of videos to the platform through links (URLs).
+    - Listing of videos in a playlist.
 
-- **Gerenciamento de Vídeos:**
-    - Criação de playlists com título, url e descrição do vídeo.
-    - Adição e remoção de vídeos utilizando Id.
-    - Listagem de todas os vídeo.
-    - Busca do vídeo por Id.
-- **Gerenciamento de Vídeos:**
-    - Adição de vídeos à plataforma através de links (URLs).
-    - Listagem de vídeos de uma playlist.
+### Technologies Used
 
-### Tecnologias Utilizadas
-
-- **Linguagem de Programação:** C#
+- **Programming Language:** C#
 - **Framework:** .NET 8
-- **Banco de Dados:** SQL Server
+- **Database:** SQL Server
 - **ORM:** Entity Framework
-- **Ferramentas:**
+- **Tools:**
     - Visual Studio
     - Git
 
-### Como Executar o Projeto
+### How to Run the Project
 
-1. **Pré-requisitos:**
-    - Ter o .NET SDK 8.0 instalado.
-2. **Clonar o Repositório:**
-   ```bash
-   git clone https://github.com/Matchiga/AluraFlix.git
-   ```
-3. **Configurar o Banco de Dados:**
-    - Atualizar a string de conexão com o banco de dados no arquivo `appsettings.json`.
-4. **Executar as Migrações (se aplicável):**
-    - Abrir o console do gerenciador de pacotes e navegar até a pasta do projeto.
-    - Executar o comando `Update-Database` para aplicar as migrações.
-5. **Iniciar a Aplicação:**
-    - Executar o comando `dotnet run` na pasta do projeto.
+1.  **Prerequisites:**
+    - Have the .NET 8.0 SDK installed.
+2.  **Clone the Repository:**
+    ```bash
+    git clone https://github.com/Matchiga/ChigaFlix.git
+    ```
+3.  **Configure the Database:**
+    - Update the database connection string in the `appsettings.json` file.
+4.  **Run Migrations (if applicable):**
+    - Open the Package Manager Console and navigate to the project folder.
+    - Run the `Update-Database` command to apply the migrations.
+5.  **Start the Application:**
+    - Run the `dotnet run` command in the project folder.
 
-### Rotas da API
+### API Routes
 
 **Playlists:**
 
-- `GET /Videos`: Retorna todas as playlists do usuário autenticado.
-- `GET /Videos/{id}`: Retorna uma playlist específica pelo ID.
-- `POST /Videos`: Cria uma nova playlist.
-- `PUT /Videos`: Atualiza uma playlist existente.
-- `DELETE /Videos/{id}`: Exclui uma playlist.
+- `GET /Videos`: Returns all playlists of the authenticated user.
+- `GET /Videos/{id}`: Returns a specific playlist by ID.
+- `POST /Videos`: Creates a new playlist.
+- `PUT /Videos`: Updates an existing playlist.
+- `DELETE /Videos/{id}`: Deletes a playlist.
 
-### Autor
-
-- [Matheus Chiga](https://github.com/Matchiga/)
+### Author
